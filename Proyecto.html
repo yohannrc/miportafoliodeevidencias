@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Logo -->
+    <header class="container text-center py-5">
+        <img src="logo.png.png" alt="Mi Logotipo" class="img-fluid" width="200">
+        <h1>Mi Portafolio Yohann</h1>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#bio">Biografía</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#especialidades">Especialidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#proyectos">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Biografía -->
+    <section id="bio" class="py-5">
+        <div class="container">
+            <h2>Biografía</h2>
+            <p>Mi breve reseña profesional es que aunque va muy poco tiempo que llevo de esto ya tengo una base 
+                de la programacion que es hacer una sencilla pagina web pero funcionable, al igual que se vean bien y 
+                funcionables  
+            </p>
+            <img src="foto.jpeg" alt="Foto Profesional" class="img-fluid rounded-circle" width="200">
+        </div>
+    </section>
+
+    <!-- Especialidades -->
+    <section id="especialidades" class="bg-light py-5">
+        <div class="container">
+            <h2>Especialidades</h2>
+            <p>Las siguientes tecnologias y herramientas son algunas que logro dominar</p>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="py-5">
+        <div class="container">
+            <h2>Proyectos</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="proyecto1.png" class="card-img-top" alt="Proyecto 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Proyecto 1</h5>
+                            <p class="card-text">Mi breve explicacion de mi primer proyecto hice una pagina de marcador de avion
+                                donde registraba cada avion que sale y avion que llega, al igual que puedes registrar tu vuelo y 
+                                cualquier vuelo que salia, esto se registra en xammp que es una aplicacion donde puedes ver cada 
+                                registro que se ingresa en la base de datos
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="proyecto2.png" class="card-img-top" alt="Proyecto 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Proyecto 2</h5>
+                            <p class="card-text">En mi segundo proyecto realice el registro de un banco el cual registra el cliente
+                            te registra como nuevo usuario y como si fueras ya anterior usuario te da tu numero de entrada para poder
+                            acceder al banco y te registra en una base de datos, registrando tu nombre, numero de telefono, email y asi 
+                            llevar el registro de cada de tus clientes 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="proyecto3.png" class="card-img-top" alt="Proyecto 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Proyecto 3</h5>
+                            <p class="card-text">Y mi proyecto numero tres es la pagina de una jugueteria que te enseña todos los juguetes 
+                                que tiene su ubicacion, en laces etc. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="bg-light py-5">
+        <div class="container">
+            <h2>Contacto</h2>
+            <p>¡Ponte en contacto conmigo a través de las siguientes opciones!</p>
+            <ul class="list-unstyled">
+                <li><a href="https://github.com/yohannrc" target="_blank">GitHub</a></li>
+                <li><a href="https://www.instagram.com/yohann.rc" target="_blank">Instagram</a></li>
+                <li>Teléfono: 2228091780</li>
+                <li>Email: Yohannherrada2@gmail.com</li>
+            </ul>
+
+            <h3>Formulario de Contacto</h3>
+            <form action="contacto.php" method="POST">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="asunto" class="form-label">Asunto</label>
+                    <input type="text" class="form-control" id="asunto" name="asunto" required>
+                </div>
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white py-3 text-center">
+        <p>&copy; 2024 Todos los derechos reservados.</p>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#inicio" class="text-white">Inicio</a></li>
+            <li class="list-inline-item"><a href="#contacto" class="text-white">Contacto</a></li>
+        </ul>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="parte3.js" defer></script>
+<link rel="stylesheet" href="parte2.css">
+</body>
+</html>
+
